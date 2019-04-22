@@ -1,0 +1,372 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.clear{
+  clear: both;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*######################################################
+################### HEADER #############################
+######################################################*/
+
+#top_nav{
+  width: 100%;
+  background-color: #50819A;
+}
+
+#logo{
+  width: 200px;
+  height: 100px;
+  margin: 0 0 -15px 0;
+  float: left;
+  background-color: #509A94;
+}
+
+#nav_list{
+  float:right;
+  padding: 30px 0;
+}
+
+
+ul#nav li{
+  display: inline;
+  color: #eee;
+  font-family: 'Cabin', sans-serif;
+  font-size: 10pt;
+  padding-left: 20px;
+}
+
+/*########################################################
+#################### SPOTLIGHT ###########################
+########################################################*/
+
+#spotlight_bg{
+  width: 100%;
+  height: calc(100vh - 85px);
+  background-image:url(https://images.estately.net/42_5899358_0_1553196132.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#spotlight_container{
+  width: 600px;
+  height: 300px;
+  float:right;
+  margin: 100px 0;
+  padding: 20px 10px;
+  background-color:rgba(0, 0, 0, 0.4);
+  border-width: 5px;
+  border-style: dashed;
+  border-color:rgba(155, 155, 155, 0.2);
+}
+
+#spotlight_container h1{
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #efefef;
+}
+
+#spotlight_container p1{
+  font-family: 'Roboto Slab', serif;
+  color: #efefef;
+}
+
+/*#######################################################
+################### CALL PANEL ##########################
+#######################################################*/
+
+#call_panel{
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+#call_panel h4{
+  font-family: 'Cabin', sans-serif;
+}
+
+/*#######################################################
+################### SMALL PANEL ##########################
+#######################################################*/
+
+#small_panel{
+  width: 100%;
+  padding: 20px 0;
+}
+
+#small_panel h4{
+  font-family: 'Cabin', sans-serif;
+}
+
+/*#########################################################
+################# SPLIT PANEL #############################
+#########################################################*/
+
+#split_panel_container{
+  background-color: #000;
+  width: 100%;
+}
+
+#split_panel{
+  width: 50%;
+  height: 300px;
+  float: left;
+}
+
+.panel_1{
+  background-image:url(http://www.parispaintingstudio.com/uploads/1/0/8/8/108810317/paris-painting-home1_orig.png);
+  background-position: center center;
+  background-size: cover;
+  filter: opacity(0.8);
+  -webkit-filter: opacity(0.8);
+}
+
+.panel_1:HOVER{
+  animation: focus 1s forwards;
+  -webkit-animation: focus 0.5s forwards;
+}
+
+@keyframes focus{
+  100%{filter: opacity(1)};
+}
+
+@-webkit-keyframes focus{
+  100%{filter: opacity(1)};
+}
+
+.panel_2{
+  background-image:url(https://bhhscaliber.com/wp-content/uploads/2015/04/commercial-building.jpg);
+  background-position: center center;
+  background-size: cover;
+  filter: opacity(0.8);
+  -webkit-filter: opacity(0.8);
+}
+
+.panel_2:HOVER{
+  animation: focus 1s infinite;
+  -webkit-animation: focus 0.5s forwards;
+}
+
+/*#########################################################
+################# FIRST ###################################
+#########################################################*/
+
+#first{
+  width: 100%;
+}
+
+/*#########################################################
+################ FOOTER ###################################
+#########################################################*/
+
+#footer{
+  width: 100%;
+  padding: 10px 0;
+}
+
+/*#########################################################
+################## FONTS ##################################
+#########################################################*/
+
+h2{
+  font-family: 'Cabin', sans-serif;
+}
+
+h4{
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight:lighter;
+}
+
+.jumbo_text{
+  font-size: 40pt;
+}
+
+.white_text{
+  color: #fff;
+}
+
+h2.big-text{
+  font-size: 35px;
+}
+
+.text-align-right{
+  text-align: right;
+}
+
+/*#########################################################
+################## STYLE CLASSES ##########################
+#########################################################*/
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.white-bg{
+  background-color: #fff;
+}
+
+.white-bg-trans{
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.blue-bg{
+  background-color: #50819A;
+}
+
+.white-bg h2{
+  color: #50819A;
+}
+
+.white-corner-border{
+  border-right: 2px solid #e7e7e7;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.light-bg{
+  background-color: #F3F3F3;
+}
+
+.accent-bg{
+  background-color: #50819A;
+  color: #efefef;
+}
+
+.light-stripes-bg{
+  background-image:url("./img/stripes-light.png");
+}
+
+.AZLandscape-bg{
+  background-image:url("./img/AZLandscape.jpg");
+  background-color: rgba(0, 0, 0, 1);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.house-bg{
+  background-image:url("http://www.parispaintingstudio.com/uploads/1/0/8/8/108810317/things-to-know-before-buying-a-house.jpg");
+  background-size: cover;
+}
+
+.cursive{
+  font-family: 'Courgette', cursive;
+}
+
+.pad-reg{
+  padding: 40px 0;
+}
+
+.pad-sm{
+  padding: 20px 0;
+}
+
+.inline_list{
+  display: inline;
+}
+
+.margin-list li{
+  margin-left: 30px;
+  list-style-type: circle;
+}
+
+.col50{
+  width: 49%;
+  padding-right: 1%;
+  float: left;
+}
+
+.col50:last-child{
+  padding-right: 0;
+}
+
+.polaroid_box{
+  float: right;
+}
+
+.polaroid{
+  border: 10px solid #fff;
+  border-bottom: 20px solid #fff;
+  box-shadow: 2px 2px 10px 1px #ccc;
+  width: 300px;
+}
+
+.polaroid:HOVER{
+  transform: scale(1.1);
+  position: relative;
+  z-index: 3;
+}
+
+.cover-prev{
+  margin-left: -20px;
+}
+
+.tilt-left{
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+}
+
+.tilt-right{
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+}
+
+.float-right{
+  float: right;
+}
+
+/*#####################################################
+################### BOXES #############################
+#####################################################*/
+
+.floating_box_blue_40{
+  width: 37%;
+  background-color: #DFE8EF;
+  padding: 30px 10px;
+  border-right: 2px solid #CCD5DD;
+  border-bottom: 2px solid #CCD5DD;
+  float: left;
+  margin-right: 1%;
+}
+
+.floating_box_60{
+  width: 58%;
+  padding: 30px 10px;
+}
+
+.col40{
+  width: 39%;
+  padding-right: 1%;
+  float: left;
+}
+
+/*#####################################################
+################ BUTTONS ##############################
+#####################################################*/
+
+button{
+  font-family: 'Cabin', sans-serif;
+  font-size: 16pt;
+  outline: none;
+  padding: 10px 20px;
+}
+
+.yellow{
+  background-color: #C8B100;
+  border: 2px solid #C89800;
+  color: #fff;
+}
+
+.blue{
+  background-color: #509A94;
+  border: 2px solid #50919A;
+  color: #fff;
+}
