@@ -182,6 +182,12 @@ h2{
   font-family: 'Cabin', sans-serif;
 }
 
+h3{
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  color: #50819A;
+}
+
 h4{
   font-family: 'Roboto Slab', sans-serif;
   font-weight:lighter;
@@ -189,6 +195,10 @@ h4{
 
 .jumbo_text{
   font-size: 40pt;
+}
+
+.gold-text{
+  color: #DEDE1F;
 }
 
 .white_text{
@@ -240,6 +250,13 @@ h2.big-text{
 .accent-bg{
   background-color: #50819A;
   color: #efefef;
+}
+
+.testimonial-bg{
+  background-image:url("https://www.wildesuccess.com/wp-content/uploads/2017/03/Quotation_markGrey2.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat:no-repeat;
 }
 
 .light-stripes-bg{
