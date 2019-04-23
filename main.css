@@ -61,7 +61,7 @@ ul#nav li{
   float:right;
   margin: 100px 0;
   padding: 20px 10px;
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color:rgba(50, 50, 50, 0.6);
   border-width: 5px;
   border-style: dashed;
   border-color:rgba(155, 155, 155, 0.2);
@@ -73,8 +73,9 @@ ul#nav li{
 }
 
 #spotlight_container p1{
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Cabin', serif;
   color: #efefef;
+  font-size: 14pt;
 }
 
 /*#######################################################
@@ -189,8 +190,9 @@ h3{
 }
 
 h4{
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-weight:lighter;
+  font-size: 14pt;
 }
 
 .jumbo_text{
@@ -402,4 +404,13 @@ button{
   background-color: #509A94;
   border: 2px solid #50919A;
   color: #fff;
+}
+
+.link-blue{
+  color: #50819A;
+  margin-top: 20px;
+}
+
+.link-expand:HOVER{
+  font-size: larger;
 }
