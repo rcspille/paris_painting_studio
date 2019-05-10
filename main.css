@@ -183,7 +183,7 @@ ul#nav li{
 
 #footer{
   width: 100%;
-  padding: 10px 0;
+  border-top: 5px dashed #999;
 }
 
 /*#########################################################
@@ -245,6 +245,14 @@ h2.big-text{
 
 .blue-bg{
   background-color: #50819A;
+}
+
+.light-blue-bg{
+  background-color: #DFE8EF;
+}
+
+.dark-bg{
+  background-color: #444;
 }
 
 .white-bg h2{
@@ -391,6 +399,12 @@ h2.big-text{
 
 .col40{
   width: 39%;
+  padding-right: 1%;
+  float: left;
+}
+
+.col60{
+  width: 59%;
   padding-right: 1%;
   float: left;
 }
