@@ -440,3 +440,25 @@ button{
 .link-expand:HOVER{
   font-size: larger;
 }
+
+/*#######################################################
+################## CONTACT FORM #########################
+#######################################################*/
+
+#footer form{
+  float: right;
+}
+
+.contact{
+  display: block;
+  width: 400px;
+  text-align: right;
+  font-size: 20px;
+  font-family: 'Cabin', sans-serif;
+  color: #333;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: #DFE8EF;
+  outline: none;
+  border: 0;
+}
