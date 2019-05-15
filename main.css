@@ -129,6 +129,9 @@ ul#nav li{
 #split_panel{
   width: 50%;
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: left;
 }
 
@@ -141,21 +144,6 @@ ul#nav li{
   transition: 0.5s;
 }
 
-.panel_1:HOVER{
-  filter: opacity(1);
-}
-
-/*
-@keyframes focus{
-  100%{filter: opacity(1)};
-}
-
-
-@-webkit-keyframes focus{
-  100%{filter: opacity(1)};
-}
-*/
-
 .panel_2{
   background-image:url(https://bhhscaliber.com/wp-content/uploads/2015/04/commercial-building.jpg);
   background-position: center center;
@@ -165,7 +153,18 @@ ul#nav li{
   transition: 0.5s;
 }
 
-.panel_2:HOVER{
+.panel_3{
+  background-image:url(http://www.parispaintingstudio.com/uploads/1/0/8/8/108810317/kitchen-painting-paris-painting-slide-3_orig.png);
+  background-position: center center;
+  background-size: cover;
+  filter: opacity(0.8);
+  -webkit-filter: opacity(0.8);
+  transition: 0.5s;
+}
+
+.panel_1:HOVER,
+.panel_2:HOVER,
+.panel_3:HOVER{
   filter: opacity(1);
 }
 
@@ -387,6 +386,22 @@ h2.big-text{
   float: right;
 }
 
+.flex-container{
+  display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.justify-space-btwn{
+  justify-content: space-between;
+}
+
 /*#####################################################
 ################### BOXES #############################
 #####################################################*/
@@ -416,6 +431,10 @@ h2.big-text{
   width: 59%;
   padding-right: 1%;
   float: left;
+}
+
+.col30{
+  width: 30%;
 }
 
 /*#####################################################
@@ -459,9 +478,7 @@ button{
 }
 
 .contact{
-  display: block;
-  width: 400px;
-  text-align: right;
+  width: 100%;
   font-size: 20px;
   font-family: 'Cabin', sans-serif;
   color: #333;
