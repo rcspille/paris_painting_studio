@@ -73,7 +73,7 @@
     </div>
   </div>
 
- <!-- light-bg -->
+  <!-- light-bg -->
   <div id="first" class="light-bg pad-reg">
     <div class="container white-bg white-corner-border">
       <div class="col40">
@@ -131,26 +131,34 @@
   <!-- paint brands and stuff -->
   <div id="first" class="light-blue-bg pad-reg">
     <div class="container">
-      <center><a href="https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-family" target="_blank"><img src="http://www.parispaintingstudio.com/uploads/1/0/8/8/108810317/paris-painting-sherman-williams-paints_orig.png" style="width: 200px;"></a></center>
+      <div class="flex-container justify-center align-center">
+        <h3>Products you can trust. &nbsp; &nbsp; | &nbsp; &nbsp; </h3>
+        <a href="https://www.sherwin-williams.com/homeowners/color/find-and-explore-colors/paint-colors-by-family" target="_blank"><img src="http://www.parispaintingstudio.com/uploads/1/0/8/8/108810317/paris-painting-sherman-williams-paints_orig.png" style="width: 200px;"></a>
+      </div>
     </div>
   </div>
 
   <!-- small panel -->
   <div id="small_panel" class="accent-bg">
     <div class="container">
-      <center><h2>Want to learn more about what we do?</h2></center>
+      <center><h2>More About Our Services</h2></center>
     </div>
   </div>
 
   <!-- split panel -->
   <div id="split_panel_container">
     <div id="split_panel" class="panel_1">
-      <br><br><br><br><br>
-      <center><h2 class="jumbo_text white_text pad-reg">RESIDENTIAL</h2></center>
+      <div class="panel_1_bg"></div>
+      <h2 class="jumbo_text white_text pad-reg">RESIDENTIAL</h2>
     </div>
     <div id="split_panel" class="panel_2">
-      <br><br><br><br><br>
-      <center><h2 class="jumbo_text white_text pad-reg">COMMERCIAL</h2></center>
+      <h2 class="jumbo_text white_text pad-reg">COMMERCIAL</h2>
+    </div>
+    <div id="split_panel" class="panel_3">
+      <h2 class="jumbo_text white_text pad-reg">STAGING</h2>
+    </div>
+    <div id="split_panel" class="panel_1">
+      <h2 class="jumbo_text white_text pad-reg">COMMERCIAL</h2>
     </div>
     <div class="clear"></div>
   </div>
@@ -158,8 +166,8 @@
   <!-- footer -->
   <footer>
   <div id="footer" class="blue-bg pad-reg white_text">
-    <div class="container">
-      <div class="col40">
+    <div class="container flex-container justify-space-btwn">
+      <div class="col30">
         <h2>Always available to chat.</h2>
         <h3 class="white_text">Contact us today to discuss your painting needs!</h3>
         <br><br>
@@ -167,14 +175,13 @@
         <br>
         <h4>Email: <em>ParisPainting@iCloud.com</em></h4>
       </div>
-      <div class="col60">
-        <form name="contact" style="text-align: right">
-          <input type="text" class="contact" placeholder="Name"><br>
-          <input type="email" class="contact" placeholder="Email"><br>
-          <input type="telephone" class="contact" placeholder="Phone"><br>
-          <textarea row="10" col="5" class="contact" placeholder="Questions/Comments"></textarea><br>
-          <input type="button" value="Send Message" class="contact" style="text-align: center">
-        </form>
+      <div class="col30">
+        <input type="text" name="name" class="contact" placeholder="Name">
+        <input type="email" name="email" class="contact" placeholder="Email">
+        <input type="tel" name="telephone" class="contact" placeholder="Phone">
+      </div>
+      <div class="col30">
+        <textarea class="contact" name="message" placeholder="Message"></textarea>
       </div>
       <div class="clear"></div>
     </div>
