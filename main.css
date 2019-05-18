@@ -23,7 +23,7 @@ header{
   width: 100%;
   position: fixed;
   z-index: 5;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 #top_nav{
@@ -83,6 +83,13 @@ nav a:HOVER{
   padding-top: 60px;
 }
 
+#spotlight_bg_container .container{
+  display: flex;
+  height: 90%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 #spotlight_bg{
   width: 100%;
   height: 100%;
@@ -93,7 +100,7 @@ nav a:HOVER{
   background-size: cover;
   background-attachment: fixed;
   transform: scale(1);
-  transition: all 30s;
+  /*transition: all 30s;*/
   z-index: -5;
 }
 
@@ -101,7 +108,6 @@ nav a:HOVER{
   width: 600px;
   height: 300px;
   float:right;
-  margin: 100px 0;
   padding: 20px 10px;
   background-color:rgba(50, 50, 50, 0.6);
   border-width: 5px;
@@ -479,6 +485,14 @@ button{
   padding: 10px 20px;
 }
 
+button:ACTIVE{
+  border: 2px inset var(--primary-analogous);
+}
+
+button:HOVER{
+  cursor:pointer;
+}
+
 .yellow{
   background-color: #C8B100;
   border: 2px solid #C89800;
@@ -487,7 +501,7 @@ button{
 
 .blue{
   background-color: var(--primary);
-  border: 1px solid #50919A;
+  border: 2px solid #50919A;
   color: #fff;
 }
 
