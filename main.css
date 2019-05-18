@@ -14,8 +14,9 @@ html{
 /* COLOR THEMES */
 :root{
   --primary: #50819A;
-  --primary-analogous: #426383;
+  --primary-analogous: #466F84;
   --accent: #77ad50;
+  --neutral: #6a747d;
 }
 
 /* HEADER */
@@ -29,6 +30,10 @@ header{
 #top_nav{
   width: 100%;
   background-color: var(--primary);
+}
+
+#top_nav.smaller{
+  background-color: white;
 }
 
 #top_nav .container{
@@ -72,13 +77,10 @@ nav a:HOVER{
 }
 
 
-/*########################################################
-#################### SPOTLIGHT ###########################
-########################################################*/
-
+/* SPOTLIGHT */
 #spotlight_bg_container{
   width: 100%;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 95px);
   overflow: hidden;
   padding-top: 60px;
 }
@@ -93,25 +95,25 @@ nav a:HOVER{
 #spotlight_bg{
   width: 100%;
   height: 100%;
-  max-width: 100%;
-  position: absolute;
+  position: relative;
   background-image:url(https://images.estately.net/42_5899358_0_1553196132.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  transform: scale(1);
-  /*transition: all 30s;*/
+  transform: scale(1.1);
+/*  -webkit-transition: all 5s ease;
   z-index: -5;
+  */
 }
 
 #spotlight_container{
   width: 600px;
   height: 300px;
-  float:right;
   padding: 20px 10px;
   background-color:rgba(50, 50, 50, 0.6);
   border-width: 5px;
   border-style: dashed;
+  transform: scale(.8);
   border-color:rgba(155, 155, 155, 0.2);
 }
 
@@ -126,19 +128,16 @@ nav a:HOVER{
   font-size: 14pt;
 }
 
-/*#######################################################
-################### CALL PANEL ##########################
-#######################################################*/
-
+/* CALL PANEL */
 #callPanel{
   width: 100%;
-  padding: 20px 0;
   position: absolute;
-  margin-top: -33px;
+  padding: 10px 0;
+  margin-top: -10px;
   bottom: 0;
 }
 
-#callPanel.sticky{
+#callPanel.sticky{ /* becomes fixed when scrolled */
   position: relative;
   z-index:4;
   border-bottom: 1px solid whitesmoke;
@@ -146,6 +145,26 @@ nav a:HOVER{
 
 #callPanel h4{
   font-family: 'Cabin', sans-serif;
+  font-size: 12pt;
+}
+
+#callPanel img{
+  display: inline-flex;
+  margin-top: 5px;
+  margin-bottom: -6px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+#callPanel a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#callPanel .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*#######################################################
@@ -321,7 +340,22 @@ h2.big-text{
 }
 
 .accent-bg{
-  background-color: #50819A;
+  background-color: var(--accent);
+  color: #efefef;
+}
+
+.primary-bg{
+  background-color: var(--primary);
+  color: #efefef;
+}
+
+.primary-analogous-bg{
+  background-color: var(--primary-analogous);
+  color: #efefef;
+}
+
+.neutral-bg{
+  background-color: var(--neutral);
   color: #efefef;
 }
 
