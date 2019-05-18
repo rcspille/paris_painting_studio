@@ -11,8 +11,8 @@
   <link rel="stylesheet" type="text/css" href="./main.css">
   <link rel="stylesheet" type="text/css" href="./animate.css">
 
-  <!-- javascript -->
-  <script type="text/javascript" src="./sticky-scroll.js"></script>
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather+Sans|Cabin|Courgette" rel="stylesheet">
@@ -54,7 +54,7 @@
   </div>
 
   <!-- call panel -->
-  <div id="call_panel" class="accent-bg absolute">
+  <div id="callPanel" class="accent-bg to_move_content">
     <div class="container">
       <h4 style="display: inline"><span class="cursive">Paint With <u>Confidence</u>!</span> &nbsp; |  &nbsp; We are licensed, bonded, and insured.</h4>
     </div>
@@ -195,6 +195,49 @@
   </footer>
 
 <a id="bottom"></a>
+
+<script>
+
+if($(window).width() >= 1200){
+    (function($) {
+        var element = $('.to_move_content'),
+            originalY = (element.offset().top) - 66;
+
+        // Space between element and top of screen (when scrolling)
+        var topMargin = 0;
+
+        // Should probably be set in CSS; but here just for emphasis
+        element.addClass('sticky');
+
+        $(window).on('scroll', function(event) {
+            var scrollTop = $(window).scrollTop();
+
+            element.stop(false, false).animate({
+                top: scrollTop < originalY
+                    ? 0
+                    : scrollTop - originalY + topMargin
+            }, 0);
+        });
+    })(jQuery);
+}
+
+/*
+$(function(){
+    var stickyHeaderTop = $('#callPanel').offset().top;
+
+    $(window).scroll(function(){
+            if( $(window).scrollTop() > stickyHeaderTop ) {
+                    $('#callPanel').css({position: 'fixed', top: '100px', bottom: '0px'});
+                    $('#sticky').css('display', 'block');
+            } else {
+                    $('#callPanel').css({position: 'static', top: '0px'});
+                    $('#sticky').css('display', 'none');
+            }
+    });
+});
+*/
+
+</script>
 
 </body>
 
