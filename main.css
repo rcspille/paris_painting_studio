@@ -11,36 +11,66 @@ html{
   scroll-behavior: smooth;
 }
 
-/*######################################################
-################### HEADER #############################
-######################################################*/
+/* COLOR THEMES */
+:root{
+  --primary: #50819A;
+  --primary-analogous: #426383;
+  --accent: #77ad50;
+}
+
+/* HEADER */
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  border-bottom: 1px solid whitesmoke;
+}
 
 #top_nav{
   width: 100%;
-  background-color: #50819A;
+  background-color: var(--primary);
+}
+
+#top_nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 #logo{
-  width: 200px;
-  height: 100px;
-  margin: 0 0 -15px 0;
-  float: left;
-  background-color: #509A94;
+  margin-top: 5px;
 }
 
-#nav_list{
-  float:right;
-  padding: 30px 0;
+a #logo{
+  outline: none;
 }
 
+nav{
+  display: flex;
+  width: 700px;
+  justify-content: flex-end;
+  align-items: stretch;
+}
 
-ul#nav li{
-  display: inline;
+nav a{
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   color: #eee;
   font-family: 'Cabin', sans-serif;
-  font-size: 10pt;
-  padding-left: 20px;
 }
+
+nav a.active{
+  background-color: var(--accent);
+}
+
+nav a:HOVER{
+  background-color: var(--accent);
+  transition: 0.5s;
+}
+
 
 /*########################################################
 #################### SPOTLIGHT ###########################
@@ -50,6 +80,7 @@ ul#nav li{
   width: 100%;
   height: calc(100vh - 85px);
   overflow: hidden;
+  padding-top: 60px;
 }
 
 #spotlight_bg{
@@ -455,8 +486,8 @@ button{
 }
 
 .blue{
-  background-color: #509A94;
-  border: 2px solid #50919A;
+  background-color: var(--primary);
+  border: 1px solid #50919A;
   color: #fff;
 }
 
