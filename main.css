@@ -130,14 +130,21 @@ nav a:HOVER{
 ################### CALL PANEL ##########################
 #######################################################*/
 
-#call_panel{
+#callPanel{
   width: 100%;
   padding: 20px 0;
   position: absolute;
+  margin-top: -33px;
   bottom: 0;
 }
 
-#call_panel h4{
+#callPanel.sticky{
+  position: relative;
+  z-index:4;
+  border-bottom: 1px solid whitesmoke;
+}
+
+#callPanel h4{
   font-family: 'Cabin', sans-serif;
 }
 
