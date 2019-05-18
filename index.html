@@ -17,11 +17,26 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather+Sans|Cabin|Courgette" rel="stylesheet">
 
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $(window).scroll(function() {
+        var distanceFromTop = $(document).scrollTop();
+        if (distanceFromTop >= $('#logo').height())
+        {
+            $('#call_panel').fadeIn(400).addClass('sticky');
+        }
+        else
+        {
+            $('#call_panel').fadeOut(400).removeClass('sticky');
+        }
+    });
+});
+</script>
+
 </head>
 
 <!-- content starts here -->
 <body>
-  <script type="text/javascript" src="./sticky-scroll.js"></script>
 
   <!-- top nav -->
   <header>
@@ -55,7 +70,7 @@
   </div>
 
   <!-- call panel -->
-  <div id="call_panel" class="accent-bg sticky-scroll">
+  <div id="call_panel" class="accent-bg absolute">
     <div class="container">
       <h4 style="display: inline"><span class="cursive">Paint With <u>Confidence</u>!</span> &nbsp; |  &nbsp; We are licensed, bonded, and insured.</h4>
     </div>

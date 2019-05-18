@@ -133,8 +133,17 @@ nav a:HOVER{
 #call_panel{
   width: 100%;
   padding: 20px 0;
+}
+
+#call_panel.absolute{
   position: absolute;
   bottom: 0;
+}
+
+#call_panel.sticky{
+  position: fixed;
+  top: 100px;
+  bottom: 0px;
 }
 
 #call_panel h4{
