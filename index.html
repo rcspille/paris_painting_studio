@@ -41,22 +41,24 @@
 
   <!-- spotlight -->
   <div id="spotlight_bg_container">
-    <div id="spotlight_bg"></div>
-    <div class="container">
-      <div id="spotlight_container">
-        <center><h1>Residential &amp; Commercial Painting for the Phoenix/Scottsdale Area</h1></center>
-        <br>
-        <p1>See why the Valley trusts Paris Painting Studio for their Interior and Exterior Painting Applications. Offering only the <em>highest quality</em> products and workmanship, Paris Painting Studio is the #1 choice for homeowners in the Phoenix and Scottsdale areas.</p1>
-        <br><br><br>
-        <a href="contact.html"><button class="blue">Get A Quote</button></a>
+    <div id="spotlight_bg">
+      <div class="container">
+        <div id="spotlight_container">
+          <center><h1>Residential &amp; Commercial Painting for the Phoenix/Scottsdale Area</h1></center>
+          <br>
+          <p1>See why the Valley trusts Paris Painting Studio for their Interior and Exterior Painting Applications. Offering only the <em>highest quality</em> products and workmanship, Paris Painting Studio is the #1 choice for homeowners in the Phoenix and Scottsdale areas.</p1>
+          <br><br><br>
+          <a href="contact.html"><button class="blue">Get A Quote</button></a>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- call panel -->
-  <div id="callPanel" class="accent-bg to_move_content">
+  <!-- call panel / becomes sticky when scrolled -->
+  <div id="callPanel" class="primary-analogous-bg to_move_content">
     <div class="container">
-      <h4 style="display: inline"><span class="cursive">Paint With <u>Confidence</u>!</span> &nbsp; |  &nbsp; We are licensed, bonded, and insured.</h4>
+      <h4><span class="cursive">Paint With <u>Confidence</u>!</span> &nbsp; |  &nbsp; We are licensed, bonded, and insured.</h4>
+      <h4><a href="tel:4806779087"><img src="img/tel2.png"> (480) 677-9087</a></h4>
     </div>
   </div>
 
@@ -142,7 +144,7 @@
   </div>
 
   <!-- small panel -->
-  <div id="small_panel" class="accent-bg">
+  <div id="small_panel" class="primary-bg">
     <div class="container">
       <center><h2>More About Our Services</h2></center>
     </div>
@@ -198,10 +200,12 @@
 
 <script>
 
-if($(window).width() >= 1200){
+// STICKY SCROLL CLASS
+if($(window).width() >= 400){
     (function($) {
         var element = $('.to_move_content'),
-            originalY = (element.offset().top) - 66;
+            header = $('#top_nav'),
+            originalY = (element.offset().top) - 76;
 
         // Space between element and top of screen (when scrolling)
         var topMargin = 0;
@@ -220,22 +224,6 @@ if($(window).width() >= 1200){
         });
     })(jQuery);
 }
-
-/*
-$(function(){
-    var stickyHeaderTop = $('#callPanel').offset().top;
-
-    $(window).scroll(function(){
-            if( $(window).scrollTop() > stickyHeaderTop ) {
-                    $('#callPanel').css({position: 'fixed', top: '100px', bottom: '0px'});
-                    $('#sticky').css('display', 'block');
-            } else {
-                    $('#callPanel').css({position: 'static', top: '0px'});
-                    $('#sticky').css('display', 'none');
-            }
-    });
-});
-*/
 
 </script>
 
