@@ -161,6 +161,10 @@ nav a:HOVER{
   color: inherit;
 }
 
+#callPanel a:HOVER{
+  text-decoration: underline;
+}
+
 #callPanel .container{
   display: flex;
   align-items: center;
@@ -261,8 +265,14 @@ nav a:HOVER{
 ################## FONTS ##################################
 #########################################################*/
 
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 26pt;
+  color: var(--primary-analogous);
+}
+
 h2{
-  font-family: 'Cabin', sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 h3{
@@ -424,6 +434,23 @@ h2.big-text{
 
 .col50:last-child{
   padding-right: 0;
+}
+
+.flex-col50{
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.flex-col50 .testimonials{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+}
+
+.flex-col50 .video{
+  width: 50%;
 }
 
 .polaroid_box{
