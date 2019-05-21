@@ -249,7 +249,16 @@ nav a:HOVER{
 
 #footer{
   width: 100%;
-  border-top: 5px dashed #999;
+  border-top: 2px groove whitesmoke;
+}
+
+#footer .col30 a{
+  text-decoration: none;
+  color: white;
+}
+
+#footer .col30 a:HOVER{
+  text-decoration: underline;
 }
 
 .copyright{
@@ -601,4 +610,10 @@ button:HOVER{
   background-color: #DFE8EF;
   outline: none;
   border: 0;
+}
+
+.button-submit{
+  font-size: 16pt;
+  background-color: var(--accent);
+  color: white;
 }
