@@ -19,6 +19,17 @@ html{
   --neutral: #6a747d;
 }
 
+/* LINK STYLES */
+a.call-to-get-more{
+  color: var(--primary);
+  font-family: 'Cabin', sans-serif;
+  text-decoration: none;
+}
+
+a.call-to-get-more:HOVER{
+  text-decoration: underline;
+}
+
 /* HEADER */
 header{
   width: 100%;
@@ -264,10 +275,17 @@ nav a:HOVER{
 .copyright{
   width: 100%;
   padding: 10px 0;
+  background-color: var(--primary-analogous);
 }
 
 .copyright a{
   color: #fff;
+}
+
+a.social-media img:HOVER{
+  height:35px;
+  margin-bottom: -3px;
+  margin-left: -3px;
 }
 
 /*#########################################################
