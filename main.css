@@ -323,12 +323,12 @@ nav a:HOVER{
   border-top: 2px groove whitesmoke;
 }
 
-#footer .col30 a{
+#footer .col33 a{
   text-decoration: none;
   color: white;
 }
 
-#footer .col30 a:HOVER{
+#footer .col33 a:HOVER{
   text-decoration: underline;
 }
 
@@ -420,7 +420,7 @@ h2.big-text{
 }
 
 .dark-bg{
-  background-color: #444;
+  background-color: lightblue;
 }
 
 .white-bg h2{
@@ -516,6 +516,11 @@ h2.big-text{
         padding-left: 32px;
         cursor: default;
       }
+
+.box-grid h4{
+  margin-top: 5px;
+  color: #333;
+}
 
 .col50{
   width: 49%;
@@ -619,6 +624,22 @@ h2.big-text{
   padding: 30px 10px;
 }
 
+.box-grid{
+  text-align: center;
+}
+
+.box-grid .col30{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.box-grid .col30 h2{
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
 .col40{
   width: 39%;
   padding-right: 1%;
@@ -634,7 +655,16 @@ h2.big-text{
 .col30{
   width: 29%;
   padding-right: 1%;
-  float: left;
+}
+
+.col33{
+  width: 31%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.round-border{
+  border-radius: 5px;
 }
 
 /*#####################################################
