@@ -164,13 +164,20 @@ nav a:HOVER{
   width: 100%;
   height: 100%;
   position: relative;
-  background-image:url(http://www.parispaintingstudio.com/uploads/1/0/8/8/108810317/kitchen-painting-paris-painting-slide-3_orig.png);
   background-position: center center;
   background-size: cover;
   filter: grayscale(.5);
 /*  -webkit-transition: all 5s ease;
   z-index: -5;
   */
+}
+
+#small_spotlight_bg.services{
+  background-image:url(http://www.parispaintingstudio.com/uploads/1/0/8/8/108810317/kitchen-painting-paris-painting-slide-3_orig.png);
+}
+
+#small_spotlight_bg.about-us{
+  background-image:url(https://www.clients-ib.com/wp-content/uploads/2017/10/123-4-750x400.png);
 }
 
 #small_spotlight_container{
